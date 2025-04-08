@@ -72,13 +72,7 @@ addEventListener('fetch', event => {
       "/test.php",
       "/index.php.bak",
       "/index.php~",
-      "/README.md",
-      "/CHANGELOG.md",
-      "/INSTALL.md",
-      "/LICENSE.txt",
-      "/LICENSE",
       "/COPYING",
-      "/robots.txt", // Sometimes reveals internal paths
       "/sitemap.xml",  // Can reveal internal paths and structure
   
       // **Admin and Management Interfaces (Often Unprotected):**
