@@ -15,4 +15,4 @@ For Cloudflare:
 5. Deploy the worker and go to the domain-level **Workers Routes** page.
 6. Add an HTTP route on the route `example.com/*`, and replace the `example.com` with your page.
 7. Assign your worker to that route.
-8. (optional) Test your worker by visiting a page guarded by the worker, eg. [example.com/.env](example.com/.env).
+8. (optional) Test your worker by visiting a page guarded by the worker, eg. [jasoncheng.me/.env](https://jasoncheng.me/.env).
