@@ -107,7 +107,7 @@ addEventListener('fetch', event => {
       "/awstats/awstats.pl", // AWStats web analytics
       "/webalizer/", // Webalizer web analytics
   
-      // **API Endpoints (Often Unprotected or Misconfigured):**
+      // **API Endpoints (Remove if they need to be accessible)**
       "/api/v1/users",
       "/api/v2/users",
       "/api/debug",
@@ -133,11 +133,7 @@ addEventListener('fetch', event => {
       "/*.config.bak",
       "/*.inc.bak",
   
-      // **Cloud Provider Metadata (Often Accessible Internally):**
-      "http://169.254.169.254/latest/meta-data/", // AWS Instance Metadata
-      "http://metadata.google.internal/computeMetadata/v1/", // GCP Instance Metadata
-      "http://169.254.169.254/metadata/instance", // Azure Instance Metadata
-      "/metadata", // Generic metadata endpoint (sometimes exposed)
+      "/metadata",
   
       // **Specific Technology Stacks:**
       "/elmah.axd", // ASP.NET error logging handler (if enabled)
