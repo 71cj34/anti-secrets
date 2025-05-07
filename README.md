@@ -16,3 +16,5 @@ For Cloudflare:
 6. Add an HTTP route on the route `example.com/*`, and replace the `example.com` with your page.
 7. Assign your worker to that route.
 8. (optional) Test your worker by visiting a page guarded by the worker, eg. [jasoncheng.me/.env](https://jasoncheng.me/.env).
+
+Alternatively, you can clone or fork this repository, and use the "Deploy with Github" option. Mileage may vary using this method instead.
