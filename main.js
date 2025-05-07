@@ -112,7 +112,6 @@ addEventListener('fetch', event => {
       "/api/v2/users",
       "/api/debug",
       "/api/test",
-      "/api/docs",
       "/swagger",
       "/swagger.json",
       "/swagger.yaml",
@@ -214,7 +213,35 @@ addEventListener('fetch', event => {
   
   
     if (pages.includes(url.pathname)) {
-    const message = `{ "API_KEY": "nice-try" }`;
+    const message = `
+    {
+      "DB_HOST": "admin",
+      "DB_PORT": "5432",
+      "DB_USERNAME": "admin",
+      "DB_PASSWORD": "password",
+      "DB_NAME": "nice-try",
+      "API_KEY_FIREBASE": "AIzaSyREAL-API-KEY-F1ReBAS2E-Fi1REBSD",
+      "API_KEY_GOOGLE_MAPS": "gbnEpBREAL-API-KEY-FOR-GOOGLE-MAPS",
+      "API_KEY_STRIPE": "sk_test_4rfPnw2bauqwBvkq21,
+      "API_KEY_TWILIO": "ACxxxxxxxxxxxxxxxxxxVueBqoDjX",
+      "API_KEY_AWS_ACCESS": "AKxOjbwHvyQvfHoa",
+      "API_KEY_AWS_SECRET": "z2KvbPk/W1ahFaKeSeCrEtACC3SSkEy",
+      "OAUTH_CLIENT_ID": "nice-try.apps.googleusercontent.com",
+      "OAUTH_CLIENT_SECRET": "sk-v1-u1i19928zygr2rbh4v1",
+      "OAUTH_REDIRECT_URI": "http://nice-try.com/oauth_callback",
+      "MAIL_HOST": "smtp.mailprovider.com",
+      "MAIL_PORT": "587",
+      "MAIL_USERNAME": "admin",
+      "MAIL_PASSWORD": "password1",
+      "JWT_SECRET": "sk-v1-abv871i28z0ka1",
+      "SECRET_KEY": "sk-v1-44817263192837",
+      "REDIS_HOST": "fake_redis_host",
+      "REDIS_PORT": "6379",
+      "REDIS_PASSWORD": "password",
+      "PUBLIC_URL": "https://nice-try.com",
+      "DEBUG_MODE": true
+    }
+    `;
       return new Response(JSON.stringify(message), {
         status: 200,
         headers: { 'Content-Type': 'application/json' }
